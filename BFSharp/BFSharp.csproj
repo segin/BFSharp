@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interpreter.cs" />
     <Compile Include="ConsoleIO.cs" />
     <Compile Include="UserIO.cs" />
     <Compile Include="Tape.cs" />

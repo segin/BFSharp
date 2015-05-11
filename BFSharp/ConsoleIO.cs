@@ -14,17 +14,18 @@
  * OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-using System;
-
-public class ConsoleIO : UserIO
+namespace BFSharp
 {
-    byte UserIO.input()
+    public class ConsoleIO : UserIO
     {
-        return (byte)System.Console.Read();
-    }
+        byte UserIO.input()
+        {
+            return (byte)System.Console.Read();
+        }
 
-    void UserIO.output(byte outval)
-    {
-        System.Console.Write(outval);
+        void UserIO.output(byte outval)
+        {
+            System.Console.Write(outval);
+        }
     }
 }

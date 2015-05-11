@@ -25,7 +25,6 @@ namespace BFSharp
 
     public class Program
     {
-        private Tape m_tape;
 
         static void Main(string[] args)
         {
