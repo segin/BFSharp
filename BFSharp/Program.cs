@@ -35,6 +35,17 @@ namespace BFSharp
                 return;
             }
 
+            try
+            {
+                String code = File.ReadAllText(args[0]);
+                ConsoleIO console = new ConsoleIO();
+                Interpreter interp = new Interpreter();
+                interp.setIO(console);
+                interp.run(code);
+            } catch (Exception e)
+            {
+                System.Console.WriteLine("BFSharp: " + e.ToString());
+            }
 
         }
     }

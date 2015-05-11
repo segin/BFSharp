@@ -20,12 +20,12 @@ namespace BFSharp
     {
         byte UserIO.input()
         {
-            return (byte)System.Console.Read();
+            return (byte) System.Console.Read();
         }
 
         void UserIO.output(byte outval)
         {
-            System.Console.Write(outval);
+            System.Console.Write((char) outval);
         }
     }
 }
