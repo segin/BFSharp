@@ -22,7 +22,8 @@ using System.IO;
 
 namespace BFSharp
 {
-    class Program
+
+    public class Program
     {
         private Tape m_tape;
 

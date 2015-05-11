@@ -18,9 +18,9 @@ using System;
 
 namespace BFSharp
 {
-    interface UserIO
+    public interface UserIO
     {
-        char input();
-        void output(char out);
+        byte input();
+        void output(byte outval);
     }
 }
