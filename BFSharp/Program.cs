@@ -15,9 +15,6 @@
  */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.IO;
 
 namespace BFSharp
@@ -42,6 +39,7 @@ namespace BFSharp
                 Interpreter interp = new Interpreter();
                 interp.setIO(console);
                 interp.run(code);
+                System.Console.Write("\n"); 
             } catch (Exception e)
             {
                 System.Console.WriteLine("BFSharp: " + e.ToString());
